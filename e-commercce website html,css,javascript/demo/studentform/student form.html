@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>student form</h1>
+    <div class="input_cont">
+
+        <table border="2" id="table1">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text"  id="name" placeholder="enter your name"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="male" id="male">:Male <input type="radio" name="gender" value="female" id="female">:Female</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number"  id="age"></td>
+            </tr>
+            <tr>
+                <td>
+                    Sub:
+                </td>
+                <td>
+                    <select name="subjects" id="allsub">
+                        <option value="english">English</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="Maths">Maths</option>
+                        <option value="Science">Science</option>
+                        <option value="computer science">computer science</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Mark:</td>
+                <td> <input type="number"  id="mark"></td>
+            </tr>
+        
+            <tr>
+                <td>
+                    
+                </td>
+                <td><button id="save" onclick="student_form()">save</button></td>
+            </tr>
+
+        </table>   
+        <br><br>
+
+        <table id="table2" border="2">
+            <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>age</td>
+                <td>sub</td>
+                <td>Mark</td>
+                <td>action</td>
+            
+            </tr>
+            <tr >
+                <td id="n" >   a  </td>
+                <td id="a">  b   </td>
+                <td id="ag">   c  </td>
+                <td id="subject">   d  </td>
+                <td id="m">   e  </td>
+                <td><button>delete</button></td>
+            </tr>
+            
+
+        </table>
+
+
+
+
+        <script>
+            var nam=document.getElementById("name")
+            var getag=document.getElementById("age")
+            var a=document.getElementById("a")
+            var n=document.getElementById("n")
+            var agi=document.getElementById("ag")
+            var sub=document.getElementById("subject")
+            var subs=document.getElementById("allsub")
+            var mar=document.getElementById("mark")
+            
+    
+            function student_form(){
+                n.innerHTML=nam.value
+                agi.innerHTML=getag.value
+                sub.innerHTML=subs.value
+                document.getElementById("m").innerHTML=mar.value
+               
+
+                var check=document.querySelector('input[name="gender"]:checked')
+                if(check!=null)
+                    a.innerHTML=check.value
+                else
+                    a.textContent="select your gender"
+                }
+               
+
+            
+        </script>
+
+        
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+}
+.input_cont{
+    position: relative;
+    left: 400px;
+}
+input{
+    margin: 5px;
+}
+#save{
+    width: 200px;
+}
+#table2{
+    width: 400px}

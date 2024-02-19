@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overlay {
+            width: 10000px;
+            height: 10000px;
+            background-color: black;
+            opacity: 0.8;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+           
+}
+.popupbox{
+    position: absolute;
+    width: 30%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    left: 30%;
+    display: none;
+
+
+}
+    </style>
+</head>
+
+<body>
+    <button onclick="ope()">open</button>
+    <div class="overlay"></div>
+    <div class="popupbox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea rem, at earum ipsam repellendus assumenda
+        non expedita, optio cum blanditiis porro aut nisi nulla minus labore error aliquam perferendis?
+        <button onclick="clo()">close</button>
+    </div>
+
+    <script>
+        var a=document.querySelector(".overlay")
+        var b=document.querySelector(".popupbox")
+        function ope(){
+            a.style.display="block"
+            b.style.display="block"
+        }
+        function clo(){
+            a.style.display="none"
+            b.style.display="none"
+            
+        }
+    </script>
+
+</body>
+
+</html>

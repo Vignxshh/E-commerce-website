@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find the random the number</h1>
+    <input type="number" id="num">
+    <button onclick="find()">find</button>
+    <h2 id="result"></h2>
+    <div id="score">life:10</div>
+
+    <script>
+        var a=document.getElementById("num")
+        var randno=Math.floor(Math.random()*10)+1
+        var sc=document.getElementById("score")
+        var res=document.getElementById("result")
+       var  sco=10
+
+       function find(){
+        var ab=Number(a.value)
+        if(ab==randno){
+
+            
+            alert("YOOU WON🎆🎉✨")
+            res.textContent="right"
+            sco=sco+1
+            
+
+
+        }
+        if(sco>1){
+            sco=sco-1
+            sc.textContent="life:"+sco
+            res.textContent="wrong"
+           
+        }
+        else{
+            alert("YOU LOST😞")
+            sc.textContent="life:"+0
+        }
+        
+        
+       }
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>todo list</h1>
+    <input type="text"  id="int"><button onclick="todo()">add</button>
+    <div id="txt"></div>
+
+    <script>
+        var a=document.getElementById("txt")
+            var val=document.getElementById("int")
+            
+        function todo(){
+            var create=document.createElement("h1")
+            create.innerHTML=val.value+"<button onclick='del(event)'>delete</button>"
+            a.append(create)
+        
+        }
+
+
+        function del(event){
+            event.target.parentElement.remove()
+
+        }
+    </script>
+    
+</body>
+</html>

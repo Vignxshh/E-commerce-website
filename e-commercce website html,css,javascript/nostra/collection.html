@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evershop</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Pro:wght@300&family=Crimson+Text&family=Dancing+Script:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Evershop</h1>
+
+        <div class="navbar_links">
+            <p><a class="navbarlink" href="index.html">Home</a></p>
+            <p><a class="navbarlink" href="collection.html">Collections</a></p>
+            <p><a class="navbarlink" href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="toggle_menubar" style="cursor: pointer;" onclick="showsidenav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- side nav bar  -->
+    <div class="side-navbar">
+
+        <div class="sidenav_head">
+            <h2>Evershop</h2>
+            <div class="exit"><i class="fa-solid fa-xmark" onclick="closesidenav()"></i></div>
+        </div>
+
+        <div class="sidenavbar_links">
+            <p><a class="side-navbarlink1" href="index.html">Home</a></p>
+            <p><a class="side-navbarlink2" href="collection.html">Collections</a></p>
+            <p><a class="side-navbarlink3" href="contact.html">Contact</a></p>
+        </div>
+
+    </div>
+
+    <!-- product -->
+    <div class="product-collections">
+
+        <form class="product-search">
+
+            <input type="text" id="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </form>
+
+        <div class="products" id="product">
+
+            <div class="product-box">
+                <img src="../nostra/images/model1.jpg">
+                <p>white top</p>  
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model2.jpg">
+                <p>balck outfit</p>
+
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model3.jpg">
+                <p>black riding jacket</p>
+
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model4.jpg">
+                <p>grey casual cout</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model5.jpg">
+                <p>blue formal cout</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model6.jpg">
+                <p>brown casual jacket</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model7.jpg">
+                <p>women black kurta</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model8.jpg">
+                <p>mens white cout</p>  
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model9.jpg">
+                <p>b&w top</p>
+
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model10.jpg">
+                <p>golden with black dress</p>
+
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model11.jpg">
+                <p>blue casual cout</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model12.jpg">
+                <p>kids outfit</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model13.jpg">
+                <p>womens yellow sweatshirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="../nostra/images/model14.jpg">
+                <p>womens white sweatshirt</p>
+            </div>
+
+            
+            <div class="product-box">
+                <img src="../nostra/images/model15.jpg">
+                <p>womens semicasual outfit</p>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_box1">
+                <h2 class="heading3">Evershop</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat veniam nisi fuga quo dicta. Eos,
+                    minus! Ipsum sint quas, deserunt id hic veritatis eos ad cumque fugiat repudiandae suscipit
+                    inventore.</p><br>
+                <div class="icon_container">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div><br>
+                <p>@2024Nostra.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="collections.js"></script>
+    <script src="nostra.js"></script>
+
+
+
+</body>
+
+</html>
